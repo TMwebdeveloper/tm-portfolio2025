@@ -1,0 +1,293 @@
+.hero h1 {
+  font-size: 3rem;
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+/* .hero {
+    background-image: url('images/bg-hero.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+  } */
+  .image-title-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    width: 100%;
+    padding: 10px 16px;
+    background-color: rgba(255, 193, 7, 0.95); /* Bootstrap yellow */
+    color: #111;
+    font-weight: bold;
+    font-size: 1.1rem;
+    z-index: 10;
+  }
+  
+  .image-title-overlay h5 {
+    margin: 0;
+  }
+  section[id] {
+    scroll-margin-top: 80px;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .navbar .nav-link.active {
+    color: #ffc107;
+    font-weight: bold;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px; /* your navbar height */
+    z-index: 1000;
+  }
+  
+    
+  
+  body.light-mode {
+    background-color:#f9f9f9;
+    color: #212529;
+  }
+  
+  body.light-mode .navbar {
+    background-color: #ffffff !important;
+  }
+  
+  body.light-mode .navbar .nav-link {
+    color: #212529 !important;
+  }
+  
+  body.light-mode .navbar .nav-link.active {
+    color: #ff9800 !important;
+  }
+  
+  
+  .navbar-dark .navbar-nav .nav-link {
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffc107; /* Bootstrap warning color (yellow) */
+    text-decoration: underline;
+  }
+  
+  .navbar-dark .btn-warning:hover {
+    background-color: #e0a800;
+  }
+  .btn-primary {
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+    color: white !important;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3 !important;
+    border-color: #0056b3 !important;
+  }
+  
+  /* .project-header {
+    background-color: #ffc107;
+    color: #212529;
+    font-size: 1rem;
+    text-align: center;
+    z-index: 2;
+  }
+   */
+/* General nav-link hover effect */
+.navbar .nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ffc107 !important; /* Yellow on hover */
+}
+
+/* Optional underline effect */
+.navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffc107;
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+.card-body {
+  padding-top: 0.75rem; /* Default padding */
+}
+
+.card-text {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  
+}
+
+/* .card:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 20px rgba(255, 204, 0, 0.2);
+} */
+.card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+  border-color: #0d6efd; /* blue on hover */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.hero {
+  background-color: #f8f9fa;
+}
+.carousel-inner img {
+  object-fit: cover;
+  height: 300px;
+}
+
+
+/* .navbar-toggler-icon {
+  filter: brightness(2); /* make it brighter in dark mode */
+
+ .navbar-toggler .material-icons {
+  color: #ffc107 !important; /* Yellow */
+  font-size: 28px;
+}
+.btn-view-project {
+  background-color: #007bff; /* Bootstrap blue */
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-view-project:hover {
+  background-color: #0056b3;
+}
+
+
+.carousel-caption {
+  top: 0;
+  bottom: auto;
+  width: 100%;
+  left: 0;
+  padding: 12px 20px;
+  background: rgba(255, 215, 0, 0.85); /* gold yellow with opacity */
+  text-align: left;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.carousel-caption h5 {
+  margin: 0;
+  color: #222;
+  font-weight: 700;
+  font-size: 1.2rem;
+  user-select: none;
+  text-shadow: none;
+}
+
+  .project-header {
+    background-color: #ffc107; /* Bootstrap yellow */
+    color: #212529;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+   section {
+    scroll-margin-top: 100px; /* fixes scroll position */
+     padding-top: 80px;
+    padding-bottom: 80px;
+  } 
+  
+  section {
+    scroll-margin-top: 100px;
+  }
+  
+  #contact {
+    min-height: 60vh; /* ensures it's tall enough */
+  }
+  .contact-section {
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  .contact-section a {
+    color: #ffcc00;
+    text-decoration: underline;
+  }
+  #contact a:hover {
+    color: #f7d94c !important;
+    text-decoration: underline;
+  }
+  
+  body.light-mode .contact-section {
+    background-color: #f9f9f9;
+    color: #212529;
+  }
+  
+  body.light-mode .contact-section a {
+    color: #007bff;
+  }
+
+  
+  .about-img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  @media (min-width: 768px) {
+    .about-img {
+      max-width: 90%;
+    }
+  }
+
+  /* Makes mobile nav items stack with spacing */
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    padding: 10px 0;
+  }
+
+  .navbar-nav .btn {
+    width: 100%;
+  }
+}
+
+  
+  footer {
+    background-color: #212529;
+    color: #ccc;
+    font-size: 0.9rem;
+  }
+  
